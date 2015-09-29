@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Тестовое задание - HTML верстальщик // Васильева Анна</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+
+  <h1>Тестовое задание - HTML верстальщик // Васильева Анна</h1>
+
+  <div class="task">
+    <p class="task__heading">Первое задание: переключатель</p>
+    <div class="radio">
+      <input type="checkbox" id="switch" class="switch-check" name="checkbox-switch">
+      <div for="switch" class="radio__container">
+        <div class="radio__state">
+          <p class="radio__text radio__text--on">ON</p>
+          <div class="radio__toggler"></div>
+          <p class="radio__text radio__text--off">OFF</p>
+        </div>
+      </div for="switch">
+    </div>
+  </div>
+
+  <div class="task">
+    <p class="task__heading">Второе задание: процентный input</p>
+    <p class="task__description">Реализованный функционал: смена процентов по одинарному нажатию и по зажатию мыши на элементе и движению по/против часовой стрелки</p>
+    <canvas id="range-canvas" width="130" height="130"></canvas>
+  </div>
+
+  <div class="task">
+    <p class="task__heading">Третье задание: ползунок</p>
+    <canvas id="slider" width="260" height="20"></canvas>
+  </div>
+
+  <div class="task">
+    <p class="task__heading">Четвертое задание: выбор цвета</p>
+    <div class="preview"></div>
+    <div class="colorpicker">
+      <canvas class="colorpicker__canvas" id="picker" width="123" height="123"></canvas>
+    </div>
+  </div>
+
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
