@@ -1,0 +1,99 @@
+body, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body {
+  background-image: url(../img/bgr.jpg);
+  background-size: cover;
+  padding: 0 50px;
+}
+
+canvas {
+  display: block;
+}
+
+.task {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.task__heading {
+  margin-bottom: 10px;
+}
+
+.task__description {
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: 60%;
+}
+
+.radio__container {
+  display: block;
+  width: 70px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: #424242;
+  font-weight: 300;
+}
+
+.switch-check {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio__state {
+  position: relative;
+  left: -40px;
+  width: 153px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.radio__text {
+  width: 70px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  line-height: 30px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.radio__text--on {
+  width: 60px;
+  margin-left: 13px;
+}
+
+.radio__text--off {
+  opacity: .3;
+}
+
+.radio__toggler {
+  position: absolute;
+  top: 3px;
+  left: 43px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* Стили для фильтра по цвету */
+.colorpicker__canvas {
+  cursor: url('../img/cursor.png'), crosshair;
+}
+
+.preview {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 5px solid #494949;
+}
